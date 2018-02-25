@@ -8,12 +8,15 @@
 
 require "Game.php";
 
-$p=14;
-$r=2;
-$t=0;
+$p=16;
+$r=5;
 $katan=new Game();
 $katan->initGame($p);
 $katan->printGame();
+$tables=$katan->getCountTables();
+print "<br />";
+$katan->distribution($p,$r);
+
 
 
 
